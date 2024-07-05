@@ -1,6 +1,6 @@
 ---
-title: "A Book"
-author: "Frida Gomam"
+title: "R and Archives"
+author: "Andy Meyer"
 site: bookdown::bookdown_site
 documentclass: book
 output:
@@ -10,8 +10,6 @@ output:
 
 # Hello World
 
-Hi.
-
-Bye.
+This is the first attempt at organizing all my thoughts/ideas/projects related to R and Archives.
 
 <!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->

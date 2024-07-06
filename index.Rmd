@@ -8,7 +8,7 @@ output:
   #bookdown::pdf_book: default
 ---
 
-# Hello World
+# Hello World {-}
 
 This is the first attempt at organizing all my thoughts/ideas/projects related to R and Archives.
 

@@ -1,13 +1,7 @@
 # Import from Omeka S
 
 ```{r}
-install.packages("httr")
-install.packages("jsonlite")
-install.packages("jsonld")
 
-library(httr)
-library(jsonlite)
-library(jsonld)
 ```
 
 This is a test.

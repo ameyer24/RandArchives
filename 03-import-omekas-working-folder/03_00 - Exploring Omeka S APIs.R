@@ -1,24 +1,39 @@
 ## install packages
 
-install.packages("httr")
+install.packages("httr2")
 install.packages("jsonlite")
-install.packages("tidyverse")
-install.packages("tidyjson")
+# install.packages("tidyverse")
+# install.packages("tidyjson")
+# install.packages("jsonld")
 
 ## Load Packages
-library(httr)
+library(httr2)
 library(jsonlite)
-library(tidyverse)
-library(tidyjson)
+# library(tidyverse)
+# library(tidyjson)
+# library(jsonld)
 
-##define the base url - Chicago Playgrounds
-base_url <- 'https://chicagoplaygrounds.com/api/items'
-API_url <- paste0(base_url)
+##define the base url for the Omeka S site.
+base_url <- 'https://chicagoplaygrounds.com/api'
 ## use the GET command to get data
-raw_data <- GET(API_url)
-status_code(raw_data)
-url_content <- content(raw_data)
+req <- request(base_url)
+req
 
-AJM <- url_content %>% spread_all()
+req_perform(req,
+            verbosity = 3)
+
+0
+request("http://example.com") |> req_dry_run()
+
+resp <- request(base_url) |> req_perform()
+
+resp |> resp_body_json()
+
+status_code(raw_data)
+url_content <- content(raw_data,as="parsed")
+
+
+
+# https://cran.r-project.org/web/packages/tidyjson/vignettes/introduction-to-tidyjson.html
 
 

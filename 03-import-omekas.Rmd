@@ -1,7 +1,0 @@
-# Import from Omeka S
-
-```{r}
-
-```
-
-This is a test.
